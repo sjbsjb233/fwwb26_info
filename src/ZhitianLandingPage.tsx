@@ -27,7 +27,7 @@ import {
  */
 
 const FORM_URL = 'https://fwwb01.sjbsjb.xyz/?key=fwwb2026';
-const DESKTOP_URL = 'https://xxxx';
+const DESKTOP_URL = 'https://fwwb2026.sjbsjb.xyz';
 
 export default function ZhitianLandingPage() {
   const { scrollY } = useScroll();
@@ -366,10 +366,7 @@ function Hero({ onPrimary, onDemo }: { onPrimary: () => void; onDemo: () => void
               </div>
 
               {/* 光斑与纹理 */}
-              <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,214,102,0.38),transparent_62%)] blur-2xl" />
-              <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.22),transparent_62%)] blur-2xl" />
-              <div className="noise pointer-events-none absolute inset-0 opacity-[0.06]" />
-            </TiltCard>
+</TiltCard>
 
             {/* 漂浮 chips（参考视频那种“标签卡片”） */}
             <div className="hidden sm:block">
@@ -1363,12 +1360,12 @@ function DisclaimerModal({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 18, scale: 0.985 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-full max-w-xl overflow-hidden rounded-[24px] border border-neutral-200 bg-white/92 shadow-2xl backdrop-blur"
+            className="relative w-full max-w-xl overflow-hidden rounded-[22px] border border-neutral-200 bg-white shadow-[0_24px_80px_rgba(0,0,0,0.22)]"
             role="dialog"
             aria-modal="true"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* 轻微流光装饰（克制但更“可视化”） */}
+            {/* 简洁背景：无毛玻璃 */}
             <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.18),transparent_62%)] blur-2xl" />
             <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.14),transparent_62%)] blur-2xl" />
 
